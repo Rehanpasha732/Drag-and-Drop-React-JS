@@ -1,0 +1,180 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+:root {
+  --main-bg-color: white;
+  --background: #1676f3;
+  --border-color: #d9d9d9;
+}
+
+.header>h1 {
+  margin: 20px;
+  color: var(--main-bg-color);
+  text-align: center;
+}
+
+.header {
+  padding: 5px;
+  background-color: var(--background);
+}
+
+.cards_section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: var(--background);
+  padding-bottom: 49px;
+}
+
+.cards {
+  margin-top: 20px;
+  width: 30%;
+  height: 75vh;
+  background-color: #78acf1;
+  /* overflow: scroll; */
+}
+
+.cards::-webkit-scrollbar {
+  display: none
+}
+
+.upper {
+
+  padding: 15px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.upper_div_text>h4 {
+  font-weight: bold;
+  color: #1676f3;
+  margin: 5px;
+
+}
+
+
+.button {
+  border: none;
+  width: 70px;
+  height: 30px;
+  padding: 5px;
+  background-color: var(--background);
+  color: var(--main-bg-color);
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--main-bg-color);
+  transition: 0.3s;
+  color: black;
+  border: 1px solid black;
+}
+
+.input {
+  width: 100%;
+  height: 33px;
+  border: 1px solid var(--border-color);
+  padding-left: 5px;
+  caret-color: var(--border-color);
+
+}
+
+textarea {
+  border: 1px solid var(--border-color);
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: var(--background) 0px 0px 2px;
+  border: 1px solid var(--background);
+
+}
+
+
+.input:focus {
+  box-shadow: var(--background) 0px 0px 2px;
+  border: 1px solid var(--background);
+  outline: none;
+
+
+}
+
+
+textarea:hover {
+  border: 1px solid var(--background);
+}
+
+.star {
+  color: red;
+  font-size: 15px;
+}
+
+.data {
+  background-color: white;
+  height: 20vh;
+  margin: 5px;
+
+}
+.data,
+.react-draggable,
+.react-draggable-dragged{
+  cursor: grab;
+}
+.data:active {
+  cursor: -webkit-grabbing;
+}
+#p{
+  display: none;
+}
+.todo {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.edit {
+  font-size: 20px;
+}
+
+.edit:hover {
+  cursor: pointer;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+.icons {}
+
+.text {
+  padding: 20px;
+  color: var(--border-color);
+}
+
+@media screen and (max-width: 800px) {
+  .cards_section {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .cards {
+    margin: 50px auto;
+    width: 80%;
+
+  }
+
+}
